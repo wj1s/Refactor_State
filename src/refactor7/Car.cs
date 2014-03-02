@@ -11,6 +11,10 @@ namespace state
 
         public void ACC()
         {
+            if (State == State.Ready)
+            {
+                State = State.MoveForward;
+            }
         }
 
         public void Gear()

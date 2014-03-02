@@ -36,5 +36,13 @@ namespace state_test
             car.ReleaseBreak();
             Assert.Equal(State.Ready, car.State);
         }
+
+        [Fact]
+        public void should_change_to_move_forward_when_acc_given_the_car_is_ready()
+        {
+            var car = new Car(State.Ready);
+            car.ACC();
+            Assert.Equal(State.MoveForward, car.State);
+        }
     }
 }

@@ -4,6 +4,7 @@
     {
         Stop,
         Geared,
-        Ready
+        Ready,
+        MoveForward
     }
 }
