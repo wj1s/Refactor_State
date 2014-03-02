@@ -20,5 +20,13 @@ namespace state_test
             car.Gear();
             Assert.Equal(State.Geared, car.State);
         }
+
+        [Fact]
+        public void should_still_to_geared_when_acc_given_the_car_is_geared()
+        {
+            var car = new Car(State.Geared);
+            car.ACC();
+            Assert.Equal(State.Geared, car.State);
+        }
     }
 }
