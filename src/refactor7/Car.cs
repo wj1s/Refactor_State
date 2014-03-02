@@ -26,5 +26,9 @@ namespace state
         {
             State = State.Ready;
         }
+
+        public void ReverseGear()
+        {
+        }
     }
 }

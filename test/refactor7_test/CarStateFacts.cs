@@ -44,5 +44,13 @@ namespace state_test
             car.ACC();
             Assert.Equal(State.MoveForward, car.State);
         }
+
+        [Fact]
+        public void should_still_to_move_forward_when_reverse_gear_given_the_car_is_move_forward()
+        {
+            var car = new Car(State.MoveForward);
+            car.ReverseGear();
+            Assert.Equal(State.MoveForward, car.State);
+        }
     }
 }
