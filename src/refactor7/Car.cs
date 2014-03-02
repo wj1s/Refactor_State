@@ -11,10 +11,7 @@ namespace state
 
         public void ACC()
         {
-            if (State == State.Ready)
-            {
-                State = State.MoveForward;
-            }
+            State = State.TransformWhenCarACC();
         }
 
         public void Gear()

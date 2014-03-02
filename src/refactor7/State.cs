@@ -1,10 +1,12 @@
 ﻿namespace state
 {
-    public enum State
+    public abstract class State
     {
-        Stop,
-        Geared,
-        Ready,
-        MoveForward
+        public static State Stop = new StopState();
+        public static State Geared = new GearedState();
+        public static State Ready = new ReadyState();
+        public static State MoveForward = new MoveForwardState();
+
+        public abstract State TransformWhenCarACC();
     }
 }
