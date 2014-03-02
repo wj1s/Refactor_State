@@ -17,5 +17,10 @@ namespace state
         {
             State = State.Geared;
         }
+
+        public void ReleaseBreak()
+        {
+            State = State.Ready;
+        }
     }
 }

@@ -28,5 +28,13 @@ namespace state_test
             car.ACC();
             Assert.Equal(State.Geared, car.State);
         }
+
+        [Fact]
+        public void should_change_to_ready_when_release_break_given_the_car_is_geared()
+        {
+            var car = new Car(State.Geared);
+            car.ReleaseBreak();
+            Assert.Equal(State.Ready, car.State);
+        }
     }
 }

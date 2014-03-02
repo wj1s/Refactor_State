@@ -3,6 +3,7 @@
     public enum State
     {
         Stop,
-        Geared
+        Geared,
+        Ready
     }
 }
