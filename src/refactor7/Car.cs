@@ -6,11 +6,16 @@ namespace state
 
         public Car(State state)
         {
-            this.State = state;
+            State = state;
         }
 
         public void ACC()
         {
+        }
+
+        public void Gear()
+        {
+            State = State.Geared;
         }
     }
 }

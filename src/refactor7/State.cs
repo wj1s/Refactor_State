@@ -2,6 +2,7 @@
 {
     public enum State
     {
-        Stop
+        Stop,
+        Geared
     }
 }
